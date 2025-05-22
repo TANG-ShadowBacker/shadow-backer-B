@@ -1,5 +1,6 @@
-package com.tang.shadowbacker.model.item;
+package com.tang.shadowbacker.model.mapping;
 
+import com.tang.shadowbacker.model.item.ItemItem;
 import com.tang.shadowbacker.model.meta.MetaTag;
 import jakarta.persistence.*;
 import lombok.Data;

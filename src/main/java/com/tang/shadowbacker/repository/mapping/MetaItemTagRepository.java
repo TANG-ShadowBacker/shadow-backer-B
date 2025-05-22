@@ -1,6 +1,6 @@
-package com.tang.shadowbacker.repository.item;
+package com.tang.shadowbacker.repository.mapping;
 
-import com.tang.shadowbacker.model.item.MetaItemTag;
+import com.tang.shadowbacker.model.mapping.MetaItemTag;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MetaItemTagRepository extends JpaRepository<MetaItemTag, String> {
