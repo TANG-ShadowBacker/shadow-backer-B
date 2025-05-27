@@ -1,6 +1,6 @@
 package com.tang.shadowbacker.model.mapping;
 
-import com.tang.shadowbacker.model.item.ItemItem;
+import com.tang.shadowbacker.model.item.Item;
 import com.tang.shadowbacker.model.meta.MetaTag;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -20,7 +20,7 @@ public class MetaItemTag {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "item_id", nullable = false)
-    private ItemItem item;
+    private Item item;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "tag_id", nullable = false)
