@@ -13,13 +13,14 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "item_item")
-public class ItemItem {
+public class Item {
 
     @Id
     @Column(name = "item_id", nullable = false, updatable = false, length = 36)
     private String itemId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne
     @JoinColumn(name = "seller_id", nullable = false)
     private UserAccount seller;
 

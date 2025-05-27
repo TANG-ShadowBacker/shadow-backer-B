@@ -41,9 +41,13 @@ desktop.ini
 
 # === 私有或局部文档/目录（根据你要求）===
 /private/
+.env
 
 # === 明确允许构建目标（可选）===
 !**/src/main/**/target/
 !**/src/test/**/target/
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+
+
