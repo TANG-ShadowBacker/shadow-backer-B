@@ -1,6 +1,6 @@
 package com.tang.shadowbacker.model.order;
 
-import com.tang.shadowbacker.model.item.ItemItem;
+import com.tang.shadowbacker.model.item.Item;
 import com.tang.shadowbacker.model.user.UserAccount;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -12,7 +12,7 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "order_order")
-public class OrderOrder {
+public class Order {
 
     @Id
     @Column(name = "order_id", nullable = false, updatable = false, length = 36)
@@ -24,7 +24,7 @@ public class OrderOrder {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "item_id", nullable = false)
-    private ItemItem item;
+    private Item item;
 
     @Column(name = "total_price", precision = 10, scale = 2)
     private BigDecimal totalPrice;

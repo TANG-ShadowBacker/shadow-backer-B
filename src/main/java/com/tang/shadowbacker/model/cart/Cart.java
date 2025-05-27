@@ -10,7 +10,7 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "cart_cart")
-public class CartCart {
+public class Cart {
 
     @Id
     @Column(name = "cart_id", nullable = false, updatable = false, length = 36)

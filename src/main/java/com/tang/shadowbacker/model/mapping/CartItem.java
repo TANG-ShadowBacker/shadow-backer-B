@@ -1,7 +1,7 @@
 package com.tang.shadowbacker.model.mapping;
 
-import com.tang.shadowbacker.model.cart.CartCart;
-import com.tang.shadowbacker.model.item.ItemItem;
+import com.tang.shadowbacker.model.cart.Cart;
+import com.tang.shadowbacker.model.item.Item;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -11,7 +11,7 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "cart_cart_item")
-public class CartCartItem {
+public class CartItem {
 
     @Id
     @Column(name = "cart_item_id", nullable = false, updatable = false, length = 36)
@@ -19,11 +19,11 @@ public class CartCartItem {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cart_id", nullable = false)
-    private CartCart cart;
+    private Cart cart;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "item_id", nullable = false)
-    private ItemItem item;
+    private Item item;
 
     @Column(nullable = false)
     private int quantity = 1;

@@ -18,7 +18,7 @@ public class PaymentRecord {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id", nullable = false)
-    private OrderOrder order;
+    private Order order;
 
     @Column(name = "payment_status")
     private String paymentStatus; // 如：已付/失败
