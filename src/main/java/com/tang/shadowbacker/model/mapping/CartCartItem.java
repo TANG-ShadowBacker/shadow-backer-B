@@ -1,5 +1,6 @@
-package com.tang.shadowbacker.model.cart;
+package com.tang.shadowbacker.model.mapping;
 
+import com.tang.shadowbacker.model.cart.CartCart;
 import com.tang.shadowbacker.model.item.ItemItem;
 import jakarta.persistence.*;
 import lombok.Data;
